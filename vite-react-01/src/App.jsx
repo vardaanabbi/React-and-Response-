@@ -1,9 +1,11 @@
 import Demo from "./functions"
 
 function App() {
-
+ 
   return (
-    <Demo/>
+    <>
+    <h1>Testing React !</h1>
+    </>
   )
 }
 

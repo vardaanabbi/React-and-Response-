@@ -18,3 +18,10 @@ also keep the folders name capitalized . capitalize here means that first letter
 
 React internal working : a react element is created , it must contain some properties , type , content . the using  loop , it is assigned proper values and then at last appnded after root id vala div or whatever elemen you have chosen in your html while creating DOM through react . this is it , it renders the html . 
 what happens behind the scene is ; we render functions using reactDOM , function me we return html . JSX stands for java script + html ka blend . it uses bundler which converts this html into object format using render of react and then it ets apend into root . even we can do thsi this if we know the syntax that how it is accepting roperties etc and how is it converting into tree etc . 
+
+!! check internal working and depth of how react works in lecture 3 of react series by chai .
+
+react ki need and hooks ; actually when you update something , it gets updated eveywhere . here comes React where Reac takes the power to control of updating things using hooks . 
+
+each hook has to be studied like what it returns , what it does and all . 
+UseState is used to assign a value to a variable . it returns 2 things the value assigned and a function which changes the avlue of variable . 
