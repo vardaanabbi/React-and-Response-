@@ -46,3 +46,11 @@ useRef is another hook which helps us access an element using this hook . we hav
 Custom Hooks : hooks are simply function , we can write hooks on our own too . we can even use built in hooks inside our custom hooks .  
 
 to improve performance in loops in react , always use a key . we create a index.js file in components so that we can import all the components in index,js and then for main we can export index.js index wise , better readability . 
+
+useID hook is used for generating unique id's . 
+
+Link and NavLink tag in react-router-dom . NavLink provides extra features . instead of href we use To for Link . we use classNames ina callback when we want to switch colour of urls on swicthing url's and we get isActive variable when we use clssNames in a callback and then we apply these text-colour changes in other links using this isActive . isActive se pta chl jayega ki vo url pe hai ya nhi hai to class apply kr denge else nhi . 
+
+we don't need app to render when we use React Router . 
+
+ways of creating routers , their syntax , layout file , nesting routes , outlet , components , loader optimization .  

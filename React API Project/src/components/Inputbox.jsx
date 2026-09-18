@@ -1,5 +1,3 @@
-import React from "react";
-
 function InputBox({
 label, amount , onAmountChange , onCurrencyChange , currencyOption = [] , selectCurrency = "usd" ,
     
@@ -7,9 +5,9 @@ label, amount , onAmountChange , onCurrencyChange , currencyOption = [] , select
 })
  {
     return (
-        <div className={`bg-white p-3 rounded-lg text-sm flex ${amount} `}>
+        <div className={`bg-white p-3 rounded-lg text-sm flex`}>
             <div className="w-1/2">
-                <label  className="text-black/40 mb-2 inline-block">
+                <label className="text-black/40 mb-2 inline-block">
                     {label}
                 </label>
                 <input

@@ -1,12 +1,15 @@
 import { useEffect , useState } from "react";
 
-function useCurrencyInfo(currency)
+function useCurrencyInfo(currency) 
 
 {
-    [data , setData] = useState({}) // by default kept an empty object inside useState ; 
+    const [data , setData] = useState({}) // by default kept an empty object inside useState ; 
     useEffect(() => { 
         fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
-        .then((res)=> {res.json()}).then((res) => {setData(res[currency])})
+        .then((res)=> {
+            return res.json()})
+            .then((data) => {
+            setData(data[currency])})
         console.log(data) 
 
     } , [currency]) 
@@ -16,3 +19,4 @@ function useCurrencyInfo(currency)
 }
 
 export default useCurrencyInfo ; 
+
