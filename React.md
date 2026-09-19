@@ -60,3 +60,8 @@ for taking params from url or pathh ; contact/:<params-name> to access this para
 
 Loader is used for optimization : you can directly fetch inside loader also . idea is when you go on some link to click it before it when you points curser on it , fetching starts through loader and stores the info in cache which makes it faster and more optimized . useLoaderData hook is used for this purpose . 
 you can write that loader functio in that component itself and then pass it along with path and element in Route tag . use hook also in that component file . 
+
+Context Api is a solution which solves the problem of passing data . earlier itwas required to use props from 1 place to every place till it reaches targeted component . Redux also does sme thing datta passing through global variable file or say clean state management and data passing . 
+Prop drilling is the actual; problem which they have slved , it was ki to pass a  prop you have to manually pass it in many intermeddiate steps which itself doesn't even require that . so , that was the issue hihc they solved by providing a global structure from we cn directly pass props . 
+
+syntax for it's setup is pehle ek file banao aur usme context create kro , then create another file for context provider jisme context.provider se hum children ko wrap kr denge aur jo bhi fetch vagera rna hai jo bhi krna hai vahi kr lenge . then export that context provider and use it in app as a wrapper again and pass values which you want to give access to . 
