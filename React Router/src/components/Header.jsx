@@ -43,10 +43,10 @@ export default function Header() {
                             </li>
 
                             <li>
-                                <NavLink to='/contact' // to dene se isActive pe apne aap dta inject ho jata hai us page ka
+                                <NavLink to='/contact' // to dene se isActive pe apne aap data inject ho jata hai us page ka
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100
-                                        ${isActive ? "text-orange-700" : "text-gray-700"} hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        ${isActive} ? "text-orange-700" : "text-gray-700" hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Contact-Us
@@ -57,7 +57,7 @@ export default function Header() {
                                 <NavLink to='/github' // to dene se isActive pe apne aap dta inject ho jata hai us page ka
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100
-                                        ${isActive ? "text-orange-700" : "text-gray-700"} hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        ${isActive} ? "text-orange-700" : "text-gray-700" hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Github

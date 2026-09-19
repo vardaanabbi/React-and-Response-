@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, Router } from 'react-router-dom'
 import { Layout } from './Layout.jsx'
 import {Home} from './components/Home.jsx'
@@ -10,7 +9,7 @@ import {Footer} from './components/Footer.jsx'
 import { RouterProvider } from 'react-router-dom'
 import Contact from './components/Contact.jsx'
 import User from './components/User.jsx'
-import Github from './components/Github.jsx'
+import Github , { GithubLoaderInfo } from './components/Github.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -37,7 +36,7 @@ const router = createBrowserRouter(
       <Route path='' element = {<Home/>} />
       <Route path='contact' element = {<Contact/>} />
       <Route path = 'user/:user_name' element = {<User/>} />
-      <Route path='github' element = {<Github />} />
+      <Route path='github' element = {<Github />} loader = {GithubLoaderInfo} />
    </Route>
    )
 )

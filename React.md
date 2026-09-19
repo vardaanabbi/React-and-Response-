@@ -53,4 +53,10 @@ Link and NavLink tag in react-router-dom . NavLink provides extra features . ins
 
 we don't need app to render when we use React Router . 
 
-ways of creating routers , their syntax , layout file , nesting routes , outlet , components , loader optimization .  
+main me we create routing setup using Route tags which takes element and path . we can nesting inside it too . 
+2 ways of creating routes here is use a router and pas an array of objects , each object containing info as path , element in form of < element /> and children : nested routing . 
+other way is to use a router and inside it use a function create routes from elements and use , <Route /> tags inside it and yuo can do nesting dirctly inside it . takes path and element in same way . 
+for taking params from url or pathh ; contact/:<params-name> to access this param ., use my-params hook and use it jis url se params le rhe hain , jis element kme routing kri ha us url ki , usi ke ndar access kr skte hain  . art last main me render ke time we dont pass app here , we pass RouterProvider and it takes prop which is router . 
+
+Loader is used for optimization : you can directly fetch inside loader also . idea is when you go on some link to click it before it when you points curser on it , fetching starts through loader and stores the info in cache which makes it faster and more optimized . useLoaderData hook is used for this purpose . 
+you can write that loader functio in that component itself and then pass it along with path and element in Route tag . use hook also in that component file . 
