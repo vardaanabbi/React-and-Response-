@@ -65,3 +65,5 @@ Context Api is a solution which solves the problem of passing data . earlier itw
 Prop drilling is the actual; problem which they have slved , it was ki to pass a  prop you have to manually pass it in many intermeddiate steps which itself doesn't even require that . so , that was the issue hihc they solved by providing a global structure from we cn directly pass props . 
 
 syntax for it's setup is pehle ek file banao aur usme context create kro , then create another file for context provider jisme context.provider se hum children ko wrap kr denge aur jo bhi fetch vagera rna hai jo bhi krna hai vahi kr lenge . then export that context provider and use it in app as a wrapper again and pass values which you want to give access to . 
+
+seedhi baat : context banaoo , fir uska provider banao jisme value pass krni hai aur components ko wrap krna hai jis me access provide krna hai value ka . and then use thatvalues through useContext hook . you ca fetch as well aas set the data using this context .
