@@ -67,3 +67,11 @@ Prop drilling is the actual; problem which they have slved , it was ki to pass a
 syntax for it's setup is pehle ek file banao aur usme context create kro , then create another file for context provider jisme context.provider se hum children ko wrap kr denge aur jo bhi fetch vagera rna hai jo bhi krna hai vahi kr lenge . then export that context provider and use it in app as a wrapper again and pass values which you want to give access to . 
 
 seedhi baat : context banaoo , fir uska provider banao jisme value pass krni hai aur components ko wrap krna hai jis me access provide krna hai value ka . and then use thatvalues through useContext hook . you ca fetch as well aas set the data using this context .
+
+Redux : Redux is also a library which solves the problem of state management or say props passing . Redux setup is much complex and is actual main player but redux-toolkit and redux-react are much better to use as it connects reactwith it's framework and setup is easy and simple . it handles everything internally , all middlewares , functionalities etc whihc were used in redux and other complexities . reducers are used for functionalities . 
+
+There is store which is sort of global variable and it contains mini stores jisme se functionalities or say reducers . useSelector se we extract functonalities from the store and useDispatch se we send the functionality back to store . 
+
+Redux Toolkit : configuration and setup : set up a store first , then features folder and then name the files with slice config as an idntifier to know redux toolkit is being used . uske andar methods / functionalities / reducers hote hain aur kya . createSlice se reducers kaam me lete hain . every thing in redux is around objects . 
+
+difference between context api and redux toolkit is that in context api we used to declare functions and not define them there only but in redux toolkit what we do is we declare the function there . we get state and function in useSlice . state tells us current state of the store and action provides the values such as id etc which we may require .  
