@@ -12,7 +12,7 @@ export const todoSlice = createSlice(
         initialState ,
         reducers: 
         {
-            adTodo : (state , action) => {
+            addTodo : (state , action) => {
                 const todo = {id : nanoid() , text : action.payload}
                 state.todos.push(todo) // updating the state 
             } , 
@@ -22,3 +22,8 @@ export const todoSlice = createSlice(
         } 
     }
 )
+
+export const {addTodo , removeTodo} = todoSlice.actions  // syntax for exporting individual functionalities for components . 
+
+export default todoSlice.reducer  // syntax for exporting reducers for our store 
+
